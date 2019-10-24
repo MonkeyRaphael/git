@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+        }
+a{
+   
+    width: 175px;
+}
+        .table {
+            width: 100%;
+        }
+
+        .table-header-text {
+            text-align: center;
+            line-height: 80px;
+
+        }
+
+        .table-header-background {
+            background-color: #d4b106;
+            height: 80px;
+
+        }
+
+        .table-left {
+
+            background-color: #fadb14;
+            width: 200px;
+            height: 2000px;
+            float: left;
+        }
+
+        .table-left-text {
+            padding: 20px;
+            color: #000;
+        }
+
+        .table-body-background {
+           
+           margin-left: 100px;
+            background-color: #ffec3d;
+            height: 2000px;
+        }
+        .table-body-background .tp{
+            display: inline-block;
+            margin-top: 50px;
+            margin-left:50px;
+        }
+        .table-body-background .coffee{
+            text-align: center;
+        }
+        .table-body-table {
+        
+            border-collapse: collapse;
+            border: 3px solid black;
+            margin: 0 auto;
+        }
+
+        .table-body-table1 {
+            text-align: center;
+            width: 300px;
+        }
+
+        .table-body-table2 {
+            text-align: center;
+            width: 100px;
+        }
+
+        .last {
+
+            text-align-last: center;
+            background-color: #d4b106;
+        }
+
+        .number {
+            text-align: center;
+        }
+
+        .number::before {
+            content: "$";
+        }
+
+        .table-header-background p {
+            font-size: 30px;
+
+        }
+
+        a {
+            color: #000;
+        }
+
+        ul {
+            margin-right: auto;
+            padding: 0px;
+            text-align: center;
+            margin-top: 20px;
+            position: fixed;
+            width: 200px;
+            overflow: auto;
+
+          
+        }
+        li a:hover:not(.active) {
+            background-color: black;
+            color: #87e8de;
+            display: block;
+            text-decoration: none;
+            
+            
+        }
+        .jiage{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .div-body{
+            text-indent:25px;
+        }
+        h4::first-letter{
+            font-size: 32px;
+            float: left;
+          padding-right:5px;
+			font-weight:bold;
+			font-family:黑体;
+			color:black; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-header-text">
+        <div class="table-header-background">
+            <p>
+                <img src="./image/杯子.png" width="30" height="33" />来杯咖啡吗？
+            </p>
+        </div>
+    </div>
+    <div>
+        <div class="table-left">
+
+            <ul >
+                <h1>
+                    菜单
+                </h1>
+
+                <li class="table-left-text" >
+                    <a href="#moka">摩卡</a>
+                </li>
+                <li class="table-left-text">
+                    <a href="#mskf">美式咖啡</a>
+                </li>
+                <li class="table-left-text">
+                    <a href="#kbqn">卡布奇诺</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="table-body-background">
+
+
+            <div class="coffee">
+                <img src="./image/coffee.jpg">
+
+            </div>
+            <p class="jiage">
+                价格表
+            </p>
+            <table class="table-body-table" border="1" cellpadding="20">
+                <tr>
+                    <td class="table-body-table1">名称</td>
+                    <td class="table-body-table2">价格</td>
+                </tr>
+                <tr>
+                    <td class="table-body-table1">摩卡</td>
+                    <td class="number">28</td>
+                </tr>
+                <tr>
+                    <td class="table-body-table1">美式咖啡</td>
+                    <td class="number">26</td>
+                </tr>
+            </table>
+
+        
+            <div>
+                <h2 class="tp">
+                    <img src="./image/mk.jpg" />
+                </h2>
+                <h2 class="title">
+                    <p id="moka">摩卡</p>
+                </h2>
+                <h4>
+                    <p class="div-body">“拿铁”是意大利文“Latte”的 音译，拿铁咖啡(CoffeeLatte)是花式咖啡的一种， 是咖啡与牛奶交融的极至之作。
+                    </p>
+                    <p class="div-body">意式拿铁咖啡为纯牛奶加咖啡，美式拿铁则将部分牛奶替换成奶泡，本地的拿铁多为此种。 那句著名的“我不在咖啡馆，就在去咖啡馆的路上”是一位音乐家在维也纳说出来的。
+                        维也纳的空气里，永远都飘荡着音乐和拿铁(Latte)咖啡的味道。
+                    </p>
+                    <!-- <div class="word">a<br>b</div> -->
+                </h4>
+                <h2 class="tp">
+                    <img src="./image/kbqn.jpg" />
+                </h2>
+                <h2>
+                    <p id="kbqn">卡布奇诺</p>
+                </h2>
+                <h4>
+                    <p class="div-body">意大利人阿奇布夏发明蒸汽压力咖啡机的同时，也发展出了卡布奇诺咖啡。 </p>
+                    <p class="div-body">卡布奇诺是一种加入以同量的意大利特浓咖啡和蒸汽泡沫牛奶相混合的意大利咖啡。
+                        此时咖啡的颜色，就像卡布奇诺教会的修士在深褐色的外衣上覆上一条头巾一样，咖啡因此得名。
+                        传统的卡布奇诺咖啡是三分之一浓缩咖啡，
+                        三分之一蒸汽牛奶和三分之一泡沫牛奶，并在上面撒上小颗粒的肉桂粉末。
+                    </p>
+                </h4>
+                <h2 class="tp">
+                    <img src="./image/mskf.jpg" />
+                </h2>
+                <h2>
+                    <p id="mskf">美式咖啡</p>
+                </h2>
+                <h4>
+                    <p class="div-body">意大利人阿奇布夏发明蒸汽压力咖啡机的同时，也发展出了卡布奇诺咖啡。 </p>
+                    <p class="div-body">卡布奇诺是一种加入以同量的意大利特浓咖啡和蒸汽泡沫牛奶相混合的意大利咖啡。
+                        此时咖啡的颜色，就像卡布奇诺教会的修士在深褐色的外衣上覆上一条头巾一样，咖啡因此得名。
+                        传统的卡布奇诺咖啡是三分之一浓缩咖啡，
+                        三分之一蒸汽牛奶和三分之一泡沫牛奶，并在上面撒上小颗粒的肉桂粉末。
+                    </p>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="last" colspan="2">
+        欢迎来到德莱联盟
+    </div>
+</body>
+
+</html>
