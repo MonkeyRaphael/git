@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIV咖啡</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #ccc;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .clearfix {
+        clear: both;
+    }
+
+    #header {
+        text-align: center;
+        background-color: #50e782;
+        height: 70px;
+        color: #2093b3;
+
+    }
+
+    #header .title {
+        line-height: 70px;
+    }
+
+    #header .title img {
+        height: 20px;
+        width: 20px;
+    }
+
+    #sidebar {
+        float: left;
+        width: 20%;
+        height: 100%;
+        position: sticky;
+        top: 0;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    #sidebar ul>li {
+        padding: 10px;
+        border-bottom: 1px solid #333;
+        list-style: none;
+    }
+
+    #sidebar ul>li:hover {
+        background-color: #4a4a4a;
+    }
+
+    #sidebar ul>li:active {
+        background-color: rgb(37, 113, 138);
+    }
+
+    #sidebar ul>li:last-child {
+        border-bottom: 0;
+    }
+
+    #sidebar ul>li>a {
+        color: #333;
+    }
+
+
+    #main {
+        float: left;
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    #main .main-top h2 {
+        text-align: center;
+    }
+
+    #main .main-top img {
+        width: 78%;
+    }
+
+    #main .main-top table {
+        border-collapse: collapse;
+        width: 78%;
+        margin: 0 auto;
+    }
+
+    #main .main-top table tr td:last-child::before {
+        content: '￥'
+    }
+
+    #main .main-container {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #main .main-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #main .main-container p {
+        text-indent: 2em;
+    }
+
+    #main .main-container p::first-letter {
+        font-size: 32px;
+    }
+
+    #footer {
+        text-align: center;
+        background-color: #50e782;
+        height: 70px;
+        color: #a6e2f2;
+    }
+
+    #footer .title {
+        line-height: 70px;
+    }
+
+    #footer .title img {
+        height: 20px;
+        width: 20px;
+    }
+</style>
+
+<body>
+    <div id="header">
+        <div class="title">
+            <img src="咖啡图标.png" alt="">
+            <span class="title">来杯咖啡吗</span>
+        </div>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#a">拿铁</a></li>
+            <li><a href="#b">拿铁</a></li>
+            <li><a href="#c">拿铁</a></li>
+            <li><a href="#d">拿铁</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="main-top">
+            <h2><img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0a3939c1db09b3deffb2ec3aadd607e4/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                    alt=""></h2>
+            <table border="1">
+                <tr>
+                    <th>咖啡</th>
+                    <th>价格</th>
+                </tr>
+                <tr>
+                    <td>拿铁</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>美式咖啡</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>卡布奇诺</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>黑糖玛奇朵</td>
+                    <td>24</td>
+                </tr>
+            </table>
+        </div>
+        <div id="a" class="main-container">
+
+            <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0a3939c1db09b3deffb2ec3aadd607e4/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                alt="">
+            <h3>拿铁</h3>
+            <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料。意大利人早晨的厨房里，照得到阳光的炉子上通常会同时煮着咖啡和牛奶。喝拿铁的意大利人，与其说他们喜欢意大利浓缩咖啡，不如说他们喜欢牛奶，也只有Espresso才能给普普通通的牛奶带来让人难以忘怀的味道。
+            </p>
+        </div>
+        <div id="b" class="main-container">
+            <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0a3939c1db09b3deffb2ec3aadd607e4/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                alt="">
+            <h3>拿铁</h3>
+            <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料。意大利人早晨的厨房里，照得到阳光的炉子上通常会同时煮着咖啡和牛奶。喝拿铁的意大利人，与其说他们喜欢意大利浓缩咖啡，不如说他们喜欢牛奶，也只有Espresso才能给普普通通的牛奶带来让人难以忘怀的味道。
+            </p>
+        </div>
+        <div id="c" class="main-container">
+            <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0a3939c1db09b3deffb2ec3aadd607e4/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                alt="">
+            <h3>拿铁</h3>
+            <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料。意大利人早晨的厨房里，照得到阳光的炉子上通常会同时煮着咖啡和牛奶。喝拿铁的意大利人，与其说他们喜欢意大利浓缩咖啡，不如说他们喜欢牛奶，也只有Espresso才能给普普通通的牛奶带来让人难以忘怀的味道。
+            </p>
+        </div>
+        <div id="d" class="main-container">
+            <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0a3939c1db09b3deffb2ec3aadd607e4/dbb44aed2e738bd4ef6b2c98ab8b87d6267ff9d5.jpg"
+                alt="">
+            <h3>拿铁</h3>
+            <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料。意大利人早晨的厨房里，照得到阳光的炉子上通常会同时煮着咖啡和牛奶。喝拿铁的意大利人，与其说他们喜欢意大利浓缩咖啡，不如说他们喜欢牛奶，也只有Espresso才能给普普通通的牛奶带来让人难以忘怀的味道。
+            </p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <div id="footer">
+        <div class="title">
+            <img src="./img/coffee.png" alt="">
+            <span class="title">来杯咖啡吗</span>
+        </div>
+    </div>
+</body>
+
+</html>

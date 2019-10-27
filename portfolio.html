@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearfix {
+    clear: both;
+}
+#header {
+    height: 50px;
+    line-height: 50px;
+    background-color:#548100;
+    font-size: 16px;
+    
+}
+
+#header .h-left {
+    float: left;
+    padding-left: 20px;
+}
+
+#header .h-left img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: -7px;
+}
+
+#header .h-left a {
+    color: #333;
+    text-decoration: none;
+}
+
+#header .h-right {
+    float: right;
+    padding-right: 20px;
+    
+}
+
+#header .h-right ul li a {
+    color: aliceblue;
+}
+
+#container {
+    /* margin: 0 auto; */
+    text-align: center;
+    
+
+}
+
+#container h2 {
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+hr {
+    margin: 0 auto;
+    width:50px;
+    border: 2px solid #333;
+}
+#container .container-main {
+   display: flex;
+   padding: 0 45px;
+}
+#container .container-eontent {
+
+    background-color: rgba(107, 252, 167, 0.1);
+    border:1px solid rgb(192, 255, 224);
+    margin-right: 20px;
+}
+#container .container-eontent:last-child {
+    margin-right: 0;
+}
+
+#container .container-eontent img {
+    height: 350px;
+    width: 90%;
+    padding-top: 10px;    
+}
+
+#footer {
+    margin-top: 10px;
+    height: 100px;
+    background-color: #548100;
+    line-height: 100px;
+    font-size: 16px;
+}
+#footer .left {
+    margin-left: 50px;
+    float: left;
+    width: 60%;
+}
+
+#footer .right {
+    float: left;
+}
+
+#footer .right img {
+    width: 80px;
+    height: 80px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="h-left">
+            <img src="./img/logo.png" alt="">
+            <a href="">收藏</a>
+        </div>
+        <div class="h-right">
+            <ul>
+                <li>
+                    <a href="">电影</a>
+                    <a href="">书</a>
+                    <a href="">联系我</a>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="container">
+        <h2>喜欢的电影</h2>
+        <hr>
+        <div class="container-main">
+            <div class="container-eontent">
+                
+            </div>
+            <div class="container-eontent">
+                <img src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=6c8dd41573cf3bc7fc0dc5beb069d1c4/10dfa9ec8a1363276954ea2b928fa0ec08fac768.jpg" alt="">
+                <p>美好生活</p>
+            </div>
+            <div class="container-eontent">
+                <img src="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=6d7358732d2eb938f86072a0b40bee50/b2de9c82d158ccbf5515eea81bd8bc3eb03541f2.jpg" alt="">
+                <p>肖生克的救赎</p>
+            </div>
+            <div class="container-eontent">
+                <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=31e145ed40166d222c7a1dc6274a6292/b7003af33a87e9505130314a13385343fbf2b4f5.jpg" alt="">
+                <p>好家伙</p>
+            </div>
+        </div>
+        <div id="container">
+            <h2>喜欢的书</h2>
+            <hr>
+            <div class="container-main">
+                <div class="container-eontent">
+                    
+                </div>
+                <div class="container-eontent">
+                    <img src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=6c8dd41573cf3bc7fc0dc5beb069d1c4/10dfa9ec8a1363276954ea2b928fa0ec08fac768.jpg" alt="">
+                    <p>美好生活</p>
+                </div>
+                <div class="container-eontent">
+                    <img src="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=6d7358732d2eb938f86072a0b40bee50/b2de9c82d158ccbf5515eea81bd8bc3eb03541f2.jpg" alt="">
+                    <p>肖生克的救赎</p>
+                </div>
+                <div class="container-eontent">
+                    <img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=31e145ed40166d222c7a1dc6274a6292/b7003af33a87e9505130314a13385343fbf2b4f5.jpg" alt="">
+                    <p>好家伙</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="left">
+                <span>杀手莱昂、 终极追杀令（台）、杀手里昂</span>
+            </div>
+            <div class="right">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572154701298&di=c7aeada5a066fb7e679f258ec0c786b6&imgtype=0&src=http%3A%2F%2Ffile16.zk71.com%2FFile%2FCorpEditInsertImages%2F2018%2F05%2F15%2Fygz19901120_20180515102825.jpg" alt="">
+            </div>
+        </div>
+</body>
+
+</html>
